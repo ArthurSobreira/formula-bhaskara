@@ -30,10 +30,10 @@ def bhaskara(a, b, c):
     if delt == 0:
         print(f'\033[33;1mA equação possui duas raízes reais e iguais (Δ = 0).\033[m')
         print(f'\033[97;1mValor de Δ = \033[m {delt}')
-        nume_x1_x2 = -(b)
+        nume_x1_x2 = -b
         den_x1_x2 = (2 * a)
-        x1 = (nume_x1_x2) / (den_x1_x2)
-        x2 = (nume_x1_x2) / (den_x1_x2)
+        x1 = nume_x1_x2 / den_x1_x2
+        x2 = nume_x1_x2 / den_x1_x2
         print(f'\033[97;1mValor de x¹ =\033[m {nume_x1_x2}/{den_x1_x2} = {x1}')
         print(f'\033[97;1mValor de x² =\033[m {nume_x1_x2}/{den_x1_x2} = {x2}')
 
@@ -41,13 +41,13 @@ def bhaskara(a, b, c):
         print(f'\033[36;1mA equação possui duas raízes reais e distintas (Δ > 0).\033[m')
         print(f'\033[97;1mValor de Δ = \033[m {delt}')
 
-        nume_x1 = (-(b) + math.sqrt(delt))
+        nume_x1 = (-b + math.sqrt(delt))
         den_x1 = (2 * a)
-        x1 = (nume_x1) / (den_x1)
+        x1 = nume_x1 / den_x1
 
-        nume_x2 = (-(b) - math.sqrt(delt))
+        nume_x2 = (-b - math.sqrt(delt))
         den_x2 = (2 * a)
-        x2 = (nume_x2) / (den_x2)
+        x2 = nume_x2 / den_x2
 
         print(f'\033[97;1mValor de x¹ =\033[m {nume_x1}/{den_x1} = {x1}')
         print(f'\033[97;1mValor de x² =\033[m {nume_x2}/{den_x2} = {x2}')
